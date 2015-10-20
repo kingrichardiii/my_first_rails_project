@@ -2,13 +2,68 @@
 <html>
 <head>
   <title>Workspace</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= csrf_meta_tags %>
+  
+  <!-- fonts start here -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <!-- fonts end here -->
+
 </head>
+
 <body>
+  <!-- nav starts here -->
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Theory Cheese</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cheeses <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Hard</a></li>
+            <li><a href="#">Semi-soft</a></li>
+            <li><a href="#">Soft</a></li>
+            <li><a href="#">Fondue & Spreads</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+ <!-- nav ends here -->
+ 
+<!-- content starts here -->
+<h1> The Vegan Cheesemonger</h1>
+<h2> Your source for artisanal plant-based cheeses </h2>
+<div id="main-image" style="text-align: center;"><img src="https://www.freshnlean.com/wp-content/uploads/raw-vegan-almond-cheese.jpg" alt="vegan cheese" width="30%" height="30%"/></div>
 
+<!-- content ends here -->
+
+<!--- footer starts here -->
+  <footer>
+    <div class="copyright"> 
+      <p> &copy; Richard Rabeau III 2015 </p>
+    </div>
+    </div>
+  </footer>
+<!-- footer ends here -->
 <%= yield %>
-
 </body>
 </html>
