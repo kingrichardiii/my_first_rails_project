@@ -1,5 +1,10 @@
 source 'https://rubygems.org'
 
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
+end
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -41,5 +46,8 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  
+  # SQLite ensure that it only compiles in the development or test environments
+  gem 'sqlite3'
 end
 
