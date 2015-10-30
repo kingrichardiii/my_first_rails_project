@@ -2,13 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-thead {
+.table-header {
     font-family: Roboto, Helvetica, sans-serif;
     font-size: 1.5em;
-    text-align: center;
+    text-align: left;
     color: #fff;
+    padding-bottom: 15px;
+    text-align: center;
 }
 
-td {
-    padding-left: 8px;
+.row {
+    padding-bottom: 10px;
+}
+
+.table-content {
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: center;
 }
