@@ -1,0 +1,10 @@
+ <div class="row">
+        <div class="col-sm-2"><%= product.name %></div>
+        <div class="col-sm-2"><%= product.description %></div>
+        <div class="col-sm-2"><%= image_tag(product.image_url, :style => 'height: 120px; width: 120px;') %></div>
+        <div class="col-sm-2"><%= product.color %></div>
+        <div class="col-sm-1"><%= product.price %></div>
+        <div class="col-sm-1"><%= link_to 'Show', product %></div>
+        <div class="col-sm-1"><%= link_to 'Edit', edit_product_path(product) %></div>
+        <div class="col-sm-1"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+      </div>
