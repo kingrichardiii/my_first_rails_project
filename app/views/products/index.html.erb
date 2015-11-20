@@ -15,9 +15,7 @@
   </div>
 
   <div class="table-content">
- <% @products.each do |product| %>
-    <%= render @products %>
-  <% end %>
+    <%= render partial: "products/product", collection: @products %>
   </div>
 </div>
 
