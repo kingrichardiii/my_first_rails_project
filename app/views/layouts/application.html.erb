@@ -33,6 +33,16 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
+        <!-- search form starts here -->
+        <li>
+	      		<form class="navbar-form navbar-left" action="/products" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+	      			<div class="form-group">
+								<input type="text" name="q" id="q" placeholder="Product Search" />
+								  <button name="button" type="submit" class="btn btn-warning"> Search </button>	    			
+              </div>
+            </form>	      	
+        </li>
+         <!-- search form starts here -->
         <li>
           <%= link_to 'Home', static_pages_landing_page_path%>
         </li>
@@ -53,9 +63,9 @@
             </li>
             <li>
               <%= link_to 'Cheese Spreads', products_path%>
+            </li>
           </ul>
-        </li>
-      </ul>
+          </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
