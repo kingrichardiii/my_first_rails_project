@@ -6,13 +6,12 @@ class ProductsController < ApplicationController
   def index
     if params[:q]
       search_term = params[:q]
-      @products = Product.where("name LIKE ?", "%#{search_term}%")
+      @products = Product.where("LOWER(name) LIKE ?OR LOWER(description) LIKE ?", "%#{search_term.downcase}%", "%#{search_term.downcase}%")
     else
       @products = Product.all
     end
   end
-
-
+  
   # GET /products/1
   # GET /products/1.json
   def show
