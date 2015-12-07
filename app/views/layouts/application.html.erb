@@ -42,7 +42,7 @@
               </div>
             </form>	      	
         </li>
-         <!-- search form starts here -->
+         <!-- search form ends here -->
         <li>
           <%= link_to 'Home', static_pages_landing_page_path%>
         </li>
@@ -66,10 +66,25 @@
             </li>
           </ul>
           </ul>
+          <!-- login starts here -->
+          <ul class="nav pull-right">
+            <li>
+              <% if user_signed_in? %>
+                <%= link_to('Logout', destroy_user_session_path, :method=> :delete) %>
+              <% else %>
+                <%= link_to('Login', new_user_session_path) %>
+              <% end %>
+            </li>
+          </ul>
+           <!-- login ends here -->
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
  <!-- nav ends here -->
+ 
+<!--Flash Notice Welcome Message Upon Login-->
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
  
 <!-- content starts here -->
 <h1> The Vegan Cheesemonger</h1>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :users
   resources :products
   get 'static_pages/about'
 
@@ -28,6 +30,7 @@ Rails.application.routes.draw do
   #   resources :products
   
   resources :orders, only: [:index, :show, :create, :destroy]
+
 
   # Example resource route with options:
   #   resources :products do
