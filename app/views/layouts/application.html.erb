@@ -82,10 +82,16 @@
 </nav>
  <!-- nav ends here -->
  
-<!--Flash Notice Welcome Message Upon Login-->
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+ <!-- Access Denied Notice -->
+<% if notice %>
+<p class="alert alert-warning" role="alert"><%= notice %> </p>
+<% end %> 
+
+<% if alert %>
+<p class="alert alert-warning" role="alert"><%= alert %> </p>
+<% end %> 
  
+
 <!-- content starts here -->
 <h1> The Vegan Cheesemonger</h1>
 <h2> Your source for artisanal plant-based cheeses </h2>
