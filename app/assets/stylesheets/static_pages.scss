@@ -8,27 +8,56 @@ html {
 }
 body {
     margin: 0 0 50px; /* bottom = footer height */
-    background-color: #f79f79;
+    background-color: white; /* former color #f79f79 */
 }
 
 .navbar {
-    background-color: #87b6a7;
+    background-color: black;
     border: none !important;
-    color: #fff;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.navbar li {
+    font-size: 1.5em !important;
+    color: white;
+}
+
+#login li {
+    color: white;
+    padding-top: 2%;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+#login a {
+  color: #fff;
+}
+
+#login a:hover {
+    text-decoration: underline;
 }
 
 h1 {
     font-family: Montserrat, Helvetica, sans-serif;
-    font-size: 3em;
-	color: #e3f09b;
+    font-size: 8em;
+    padding-top:5%;
+	color: black;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 h2 {
     font-family: Roboto, Helvetica, sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
-    color: #fff;
+    color: #6D7276;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center !important;
+    color: black;
 }
 
 
@@ -51,7 +80,7 @@ footer {
     bottom: 0;
     height: 50px;
     width: 100%;
-    background-color: #87b6a7;
+    background-color: #6D7276;
     color: #fff;
 }
 
@@ -69,7 +98,7 @@ footer {
  /* Registration Page */ 
 
  #sign_up_page {
-   background-color: #87b6a7;
+   background-color: black;
    padding-top: 10px;
    border-radius: 10px;
  }
@@ -77,7 +106,7 @@ footer {
  /* Forgot Password Page */
 
  #forgot-password {
-   background-color: #87b6a7;
+   background-color: black;
    padding-top: 10px;
    border-radius: 10px;
  }
@@ -85,7 +114,7 @@ footer {
 /* Sign in Page */
 
  #sign_in_page {
-   background-color: #87b6a7;
+   background-color: black;
    padding-top: 10px;
    border-radius: 10px;
  }
@@ -95,20 +124,8 @@ footer {
  }
  
  /* Show Products Page */
- 
-/* .productbox {
-    background-color: white;
-    height: 300px;
-    width: 600px;
-    padding-top: 1%;
-    padding-left: 3%;
-    margin-left: 30%;
-    clear: left;
-}
 
-*/
-
- .productbox {
+ #productbox {
     margin: auto;
     height: auto;
     width: 50%;
@@ -117,7 +134,8 @@ footer {
     overflow: hidden;
     border-style: solid;
     border-width: 1em;
-    border-color:  #87b6a7;
+    border-color:  #6d7276;
+    box-shadow: 5px 5px 5px #888888;
  }   
 
 #productdetails {
@@ -135,4 +153,26 @@ footer {
 	display: inline-block;
 	margin-top: 2%;
 	border-radius: none;
+}
+
+#productreview {
+    padding-top: 5%;
+}
+
+#reviewbox {
+    margin: auto;
+    height: auto;
+    width: 50%;
+    margin-top: 10px;
+    padding: 10px;
+    background: white !important;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 1em;
+    border-color:  #6d7276;
+    box-shadow: 5px 5px 5px #888888;
+ }  
+ 
+ #commentbox {
+    overflow: hidden;
 }
