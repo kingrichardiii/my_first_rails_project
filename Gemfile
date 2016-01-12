@@ -58,3 +58,6 @@ end
 gem 'devise'
 
 gem 'cancancan'
+
+## Gemfile for Rails 3+, Sinatra, or Merb
+gem 'will_paginate', '~> 3.0.5'
